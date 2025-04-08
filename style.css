@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Caveat", cursive;
+  /* font-family: "Poppins", sans-serif; */
+  background-color: #e8e0d5;
+  color: #2a5286;
+}
+.main {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  font-size: 3rem;
+  font-family: "Edu AU VIC WA NT Arrows", cursive;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+  font-family: "Caveat", cursive;
+}
+li {
+  list-style: none;
+}
+.build {
+  background-color: rgba(128, 128, 128, 0.339);
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.launch {
+  border: 1px solid rgba(245, 245, 245, 0.349);
+  padding: 0.1rem 0.8rem;
+  border-radius: 6px;
+}
+.heading {
+  margin-top: 20px;
+  font-size: 8rem;
+  white-space: nowrap;
+  text-align: center;
+  font-weight: 700;
+  line-height: 70%;
+}
+.text {
+  margin-top: 55px;
+  text-align: center;
+}
+.btn {
+  margin-top: 15px;
+  padding: 0.7rem 3rem;
+  border: none;
+  background-color: rgba(45, 208, 88, 0.298);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn .fa-solid:nth-child(1) {
+  display: none;
+}
+.dark .btn .fa-solid:nth-child(1) {
+  display: block;
+}
+.dark .fa-solid:nth-child(2) {
+  display: none;
+}
+.dark {
+  background-color: #00272d;
+  color: #e0ff4f;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
+  ul {
+    display: none;
+  }
+  .build {
+    background-color: rgba(128, 128, 128, 0.339);
+    padding: 0.6rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .heading {
+    margin-top: 20px;
+    font-size: 4rem;
+  }
+}
